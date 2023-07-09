@@ -59,7 +59,7 @@ const data = [
    "title": "Todo Incluido",
    "image_url": "https://m.media-amazon.com/images/M/MV5BNjlkMjIyNWUtOTJjOC00YTI5LTgzYjQtNjNjYWNmMjFjYzkzXkEyXkFqcGdeQXVyODU4MjAxOQ@@._V1_FMjpg_UX1000_.jpg",
    "director": "Roberto ",
-   "cast": "Fausto Mata, Cuqu                  n Victoria",
+   "cast": "Fausto Mata, Cuqun Victoria",
    "rating": "13+",
    "duration": "100 min",
    "show_time": 18,

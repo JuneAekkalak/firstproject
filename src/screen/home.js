@@ -64,9 +64,10 @@ const Home = () => {
         {movieDay1.map((item) => (
           <Link
             to={`/movie-detail?id=${item.id}`}
-            className="font-medium text-primary-600 hover:underline dark:text-primary-500  text-decoration-none"
+            className="font-medium text-primary-600 hover:underline dark:text-primary-500 text-decoration-none"
+            key={item.id}
           >
-            <div key={item.id}>
+            <div>
               <h3>
                 <b>{item.title}</b>
               </h3>
@@ -77,7 +78,13 @@ const Home = () => {
               <p>{item.duration}</p>
               <p>{item.show_time}.00</p>
               <p>{item.description}</p>
-              <button className="btn" onClick={() => addToFavorites(item)}>
+              <button
+                className="btn"
+                onClick={() => {
+                  console.log("Button clicked!");
+                  addToFavorites(item);
+                }}
+              >
                 <FontAwesomeIcon
                   icon={faHeart}
                   color={
